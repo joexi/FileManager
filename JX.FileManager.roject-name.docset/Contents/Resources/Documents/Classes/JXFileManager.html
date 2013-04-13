@@ -1,0 +1,1002 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JXFileManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">roject-name </a></h1>
+				<a id="developerHome" href="../index.html">JoeXi</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JXFileManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/asyncLoadDataFromPath:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ asyncLoadDataFromPath:callback:</option>
+	
+	<option value="//api/name/asyncRemoveFileAtPath:condition:">&nbsp;&nbsp;&nbsp;&nbsp;+ asyncRemoveFileAtPath:condition:</option>
+	
+	<option value="//api/name/asyncSaveData:withPath:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ asyncSaveData:withPath:callback:</option>
+	
+	<option value="//api/name/asyncSaveData:withPath:fileName:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ asyncSaveData:withPath:fileName:callback:</option>
+	
+	<option value="//api/name/fileExistsAtPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ fileExistsAtPath:</option>
+	
+	<option value="//api/name/loadDataFromPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ loadDataFromPath:</option>
+	
+	<option value="//api/name/removeFileAtPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ removeFileAtPath:</option>
+	
+	<option value="//api/name/removeFileAtPath:condition:">&nbsp;&nbsp;&nbsp;&nbsp;+ removeFileAtPath:condition:</option>
+	
+	<option value="//api/name/saveData:withPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ saveData:withPath:</option>
+	
+	<option value="//api/name/saveData:withPath:fileName:">&nbsp;&nbsp;&nbsp;&nbsp;+ saveData:withPath:fileName:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_读取">读取</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_写入">写入</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_删除">删除</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_其他">其他</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncLoadDataFromPath:callback:">asyncLoadDataFromPath:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncRemoveFileAtPath:condition:">asyncRemoveFileAtPath:condition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncSaveData:withPath:callback:">asyncSaveData:withPath:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncSaveData:withPath:fileName:callback:">asyncSaveData:withPath:fileName:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileExistsAtPath:">fileExistsAtPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadDataFromPath:">loadDataFromPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFileAtPath:">removeFileAtPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFileAtPath:condition:">removeFileAtPath:condition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveData:withPath:">saveData:withPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveData:withPath:fileName:">saveData:withPath:fileName:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JXFileManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JXFileManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JXFileManager.h<br />JXFileManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="读取" name="task_读取"></a>
+						<h3 class="subsubtitle task-title">读取</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadDataFromPath:">+&nbsp;loadDataFromPath:</a></code>
+		<span class="tooltip"><p>加载文件</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncLoadDataFromPath:callback:">+&nbsp;asyncLoadDataFromPath:callback:</a></code>
+		<span class="tooltip"><p>异步加载文件</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="写入" name="task_写入"></a>
+						<h3 class="subsubtitle task-title">写入</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveData:withPath:">+&nbsp;saveData:withPath:</a></code>
+		<span class="tooltip"><p>存储数据到本地</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncSaveData:withPath:callback:">+&nbsp;asyncSaveData:withPath:callback:</a></code>
+		<span class="tooltip"><p>异步存储数据到本地</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveData:withPath:fileName:">+&nbsp;saveData:withPath:fileName:</a></code>
+		<span class="tooltip"><p>存储数据到本地</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncSaveData:withPath:fileName:callback:">+&nbsp;asyncSaveData:withPath:fileName:callback:</a></code>
+		<span class="tooltip"><p>异步存储数据到本地</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="删除" name="task_删除"></a>
+						<h3 class="subsubtitle task-title">删除</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFileAtPath:">+&nbsp;removeFileAtPath:</a></code>
+		<span class="tooltip"><p>删除文件</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFileAtPath:condition:">+&nbsp;removeFileAtPath:condition:</a></code>
+		<span class="tooltip"><p>删除文件目录和目录下的所有文件</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncRemoveFileAtPath:condition:">+&nbsp;asyncRemoveFileAtPath:condition:</a></code>
+		<span class="tooltip"><p>删除文件目录和目录下的所有文件</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="其他" name="task_其他"></a>
+						<h3 class="subsubtitle task-title">其他</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileExistsAtPath:">+&nbsp;fileExistsAtPath:</a></code>
+		<span class="tooltip"><p>判断该路径是否有文件</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncLoadDataFromPath:callback:" title="asyncLoadDataFromPath:callback:"></a>
+	<h3 class="subsubtitle method-title">asyncLoadDataFromPath:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>异步加载文件</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)asyncLoadDataFromPath:(NSString *)<em>path</em> callback:(void ( ^ ) ( NSObject *data ))<em>callback</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>加载完成后回调</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL 同步返回文件是否存在</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>异步加载文件</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncRemoveFileAtPath:condition:" title="asyncRemoveFileAtPath:condition:"></a>
+	<h3 class="subsubtitle method-title">asyncRemoveFileAtPath:condition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除文件目录和目录下的所有文件</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)asyncRemoveFileAtPath:(NSString *)<em>path</em> condition:(BOOL ( ^ ) ( NSDictionary *fileInfo ))<em>condition</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件目录路径</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>condition</em></dt>
+			<dd><p>文件删除条件判断</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>无</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除文件目录和目录下的所有文件</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncSaveData:withPath:callback:" title="asyncSaveData:withPath:callback:"></a>
+	<h3 class="subsubtitle method-title">asyncSaveData:withPath:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>异步存储数据到本地</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)asyncSaveData:(NSObject *)<em>data</em> withPath:(NSString *)<em>path</em> callback:(void ( ^ ) ( BOOL succeed ))<em>callback</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>需要存储的数据</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>存储完成后回调</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSData 文件中的数据</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>异步存储数据到本地</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncSaveData:withPath:fileName:callback:" title="asyncSaveData:withPath:fileName:callback:"></a>
+	<h3 class="subsubtitle method-title">asyncSaveData:withPath:fileName:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>异步存储数据到本地</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)asyncSaveData:(NSObject *)<em>data</em> withPath:(NSString *)<em>path</em> fileName:(NSString *)<em>fileName</em> callback:(void ( ^ ) ( BOOL succeed ))<em>callback</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>需要存储的数据</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>文件名</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>完成后的回调</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSData 文件中的数据</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>异步存储数据到本地</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileExistsAtPath:" title="fileExistsAtPath:"></a>
+	<h3 class="subsubtitle method-title">fileExistsAtPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>判断该路径是否有文件</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)fileExistsAtPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL 是否有文件存在</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>判断该路径是否有文件</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadDataFromPath:" title="loadDataFromPath:"></a>
+	<h3 class="subsubtitle method-title">loadDataFromPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>加载文件</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSObject *)loadDataFromPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSObject 文件中的数据</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>加载文件</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFileAtPath:" title="removeFileAtPath:"></a>
+	<h3 class="subsubtitle method-title">removeFileAtPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除文件</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)removeFileAtPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>是否删除成功</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除文件</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFileAtPath:condition:" title="removeFileAtPath:condition:"></a>
+	<h3 class="subsubtitle method-title">removeFileAtPath:condition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除文件目录和目录下的所有文件</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)removeFileAtPath:(NSString *)<em>path</em> condition:(BOOL ( ^ ) ( NSDictionary *fileInfo ))<em>condition</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件目录路径</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>condition</em></dt>
+			<dd><p>文件删除条件判断</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>无</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除文件目录和目录下的所有文件</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveData:withPath:" title="saveData:withPath:"></a>
+	<h3 class="subsubtitle method-title">saveData:withPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>存储数据到本地</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)saveData:(NSObject *)<em>data</em> withPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>需要存储的数据</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSData 文件中的数据</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>存储数据到本地</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveData:withPath:fileName:" title="saveData:withPath:fileName:"></a>
+	<h3 class="subsubtitle method-title">saveData:withPath:fileName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>存储数据到本地</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)saveData:(NSObject *)<em>data</em> withPath:(NSString *)<em>path</em> fileName:(NSString *)<em>fileName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>需要存储的数据</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>文件路径</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>文件名</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSData 文件中的数据</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>存储数据到本地</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JXFileManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 JoeXi. All rights reserved. (Last updated: 2013-04-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
