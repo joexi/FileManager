@@ -15,30 +15,21 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+    NSString *path = [[PathHelper documentDirectoryPath] stringByAppendingPathComponent:@"a.plist"];
+    NSDictionary *dic = @{@"1":@"2",@"3":@"4",@"5":@"6"};
+    [JXFileManager asyncSaveData:dic withPath:path callback:^(BOOL succeed) {
+        if (succeed) {
+            NSLog(@"写入成功");
+        }
+        [JXFileManager asyncLoadDataFromPath:path
+                                    callback:^(NSObject *data) {
+                                        NSLog(@"读取成功 %@",data);
     
-    NSString *path = [[PathHelper documentDirectoryPath] stringByAppendingPathComponent:@"a"];
-    NSLog(@"%@",path);
-//    path = [path stringByAppendingPathComponent:@"3"];
-//    path = [path stringByAppendingPathComponent:@"2"];
-    [JXFileManager removeFileWithCondition:^BOOL(NSDictionary *fileInfo) {
-        
-        return YES;
-    } atPath:path];
-    NSDictionary *dic = @{@"1":@"2",@"3":@"4"};
-//    [JXFileManager asyncSaveData:dic withPath:path callback:^(BOOL succeed) {
-//        if (succeed) {
-//            NSLog(@"写入成功");
-//        }
-//        [JXFileManager asyncLoadDataFromPath:path
-//                                    callback:^(NSObject *data) {
-//                                        NSLog(@"读取成功 %@",data);
-//    
-//                                        
-//                                    }];
-//        NSLog(@"开始读取");
-//     
-//    }];
-//    NSLog(@"开始写入");
+                                        
+                                    }];
+        NSLog(@"开始读取...");
+    }];
+    NSLog(@"开始写入...");
     
     
     

@@ -93,7 +93,6 @@ static dispatch_queue_t _dispathQueue;
             [fm removeItemAtPath:filePath error:nil];
         }
 	}
-    return YES;
 }
 
 + (void)asyncRemoveFileAtPath:(NSString *)path condition:(BOOL (^)(NSDictionary *fileInfo))condition;
