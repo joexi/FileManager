@@ -15,8 +15,8 @@ A local file manager helping reading an writing data, all apis are using G-C-D m
         [JXFileManager asyncLoadDataFromPath:path
                                     callback:^(NSObject *data) {
                                         NSLog(@"data is %@",data);
-                                    }];
+        }];
         NSLog(@"start loading...");
-    }];
+}];
 ```
 
