@@ -1,13 +1,17 @@
-FileManager
-=============
+//
+//  FileManager.h
+//  FileManager
+//
+//  Created by Joe on 13-4-12.
+//  Copyright (c) 2013年 Joe. All rights reserved.
+//
 
-A local file manager provide reading and writing data, all APIs use G-C-D mode.
+#import <Foundation/Foundation.h>
 
-# Provides
- Loading/Writing files from local disk with asnc/async way
- 
-# APIs
-``` objc
+@interface FileManager : NSObject
+{
+    
+}
 /** @name 读取 */
 /**
  加载文件
@@ -98,5 +102,4 @@ A local file manager provide reading and writing data, all APIs use G-C-D mode.
  @return BOOL 是否有文件存在
  */
 + (BOOL)fileExistsAtPath:(NSString *)path;
-```
-
+@end
