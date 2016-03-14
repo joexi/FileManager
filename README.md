@@ -5,7 +5,22 @@ A local file manager provide reading and writing data, all APIs use G-C-D mode.
 
 # Provides
  Loading/Writing files from local disk with asnc/async way
- 
+
+### Read Data
+```
+[FileManager asyncLoadDataFromPath:path
+                          callback:^(NSObject *data) {
+                          		NSLog(@"读取成功 %@",data);
+                          }];
+```
+### Write Data
+```
+ [FileManager asyncSaveData:dic withPath:path callback:^(BOOL succeed) {
+        if (succeed) {
+            NSLog(@"写入成功");
+        }
+ }];
+```
 # APIs
 ``` objc
 /** @name 读取 */
