@@ -6,8 +6,6 @@ A local file manager provide reading and writing data, all APIs use G-C-D mode.
 # Provides
  Loading/Writing files from local disk with asnc/async way
  
- 
-
 ### Read Data
 ```
 [FileManager asyncLoadDataFromPath:path
